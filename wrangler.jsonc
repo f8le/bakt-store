@@ -1,0 +1,10 @@
+{
+  // اسم الـ Worker يجب أن يطابق الاسم في لوحة Cloudflare تمامًا
+  "name": "bakt-store",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2025-05-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": { "directory": ".open-next/assets", "binding": "ASSETS" },
+  "observability": { "enabled": true }
+  // الأسرار: من لوحة Cloudflare (Variables and Secrets) أو wrangler secret put، وليس هنا
+}
